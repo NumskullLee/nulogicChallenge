@@ -70,7 +70,44 @@ solicita al candidato la creación de una POC con los siguientes endpoints:
 | `idasiento` | `string` | **Required**. id del asiento que dejara de estar reservado |
 
 
+## Installacion
 
+## Para inicializar el proyecto
+
+Step 1: Clonar el repo
+```bash
+    git clone https://github.com/NumskullLee/nulogicChallenge.git
+```
+
+Step 2: ingresa al repo clonado y ejecuta:
+```bash
+    npm install
+```
+
+Step 3: Modifica tus credenciales al gusto del archivo .env
+
+```bash
+    PORT=4000
+    MONGO_DOMINIO=localhost
+    DB_NAME=Corridas
+    DB_USER=devs
+    DB_PASS=devs
+```
+Step 4: ejecuta el comando
+```bash
+    npm start
+```
+
+Si deseas usar docker modifica el archivo docker-compose.yml modificando los parametros que te sean necesarios y ejecuta el comando
+```bash
+    docker compose up 
+```
+
+## Si quieres usar los contenedores de docker los puedes encontrar en DockerHub con los nombres
+```bash
+    docker pull esmerubi/db_nulogincchallenge
+    docker pull esmerubi/nulogicchallengeirvinhdz
+```
 
 
 
